@@ -45,6 +45,7 @@ A RESTful User Management API built using Spring Boot and MySQL with full CRUD o
 ### Create User (POST /api/users)
 
 Request Body:
+```json
 {
 "name": "Dan",
 "email": "dan@test.com"
@@ -135,9 +136,9 @@ Response:
 "error": "Validation failed",
 "path": "/api/users",
 "fieldErrors": {
-"name": "Name must be 2 to 50 characters",
-"email": "Email must be valid"
-}
+  "name": "Name must be 2 to 50 characters",
+  "email": "Email must be valid"
+  }
 }
 
 ---
